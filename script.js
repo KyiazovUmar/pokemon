@@ -1,7 +1,6 @@
 const container = document.getElementById("pokemon-container");
 
-const pokemonIds = [1, 2, 3, 11, 12, 13]; // bulbasaur, ivysaur, venusaur, metapod, butterfree, weedle
-
+const pokemonIds = [1, 2, 3, 11, 12, 13]; 
 pokemonIds.forEach((id) => {
   fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
     .then((res) => res.json())
